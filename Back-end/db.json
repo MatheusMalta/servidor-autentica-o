@@ -1,0 +1,18 @@
+{
+    "users": [
+      {
+        "name": "José",
+        "address": "10.0.0.11/",
+        "email": "José@example.com",
+        "id": 1
+        
+      },
+      {
+        "name": "maria",
+        "address": "10.0.0.10",
+        "email": "maria@example.com",
+        "id": 2
+        
+      }
+    ]
+  }
