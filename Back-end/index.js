@@ -1,7 +1,12 @@
 const express = require('express');
+const show = require('./lib/show.js');
+
+//import show from './lib/show.js';
+//import express from 'express';
 const app = express();
 const port = 3000;
-const show = require('./lib/show.js');
+
+
 
 
 
@@ -17,7 +22,7 @@ app.get('/users', (req, res) => {
 app.get('/showusers', async (req, res) => {
   const id = Number(req.params.id);
 
-  const { times } = await show();
+  const { stdout } = await show();
 
   res.json({ times });
 });
